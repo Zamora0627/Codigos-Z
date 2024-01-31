@@ -9,4 +9,4 @@ if len(dpi)==13:
     print("por presidente voto",presidente)
 else:
     print("dpi incorrecto")
-
+print("hola")
