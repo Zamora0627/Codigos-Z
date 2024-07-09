@@ -1,0 +1,33 @@
+const int ledVerde = 2;
+const int ledAmarillo = 3;
+const int ledRojo = 4;
+
+
+const int tiempoVerde = 4000;
+const int tiempoAmarillo = 1000;
+const int tiempoRojo = 6000;
+
+void setup() {
+ 
+  pinMode(ledVerde, OUTPUT);
+  pinMode(ledAmarillo, OUTPUT);
+  pinMode(ledRojo, OUTPUT);
+}
+
+void loop() {
+
+
+  
+  digitalWrite(ledVerde, HIGH);
+  delay(tiempoVerde);
+  digitalWrite(ledVerde, LOW);
+
+  
+  digitalWrite(ledAmarillo, HIGH);
+  delay(tiempoAmarillo);
+  digitalWrite(ledAmarillo, LOW);
+
+  
+  digitalWrite(ledRojo, HIGH);
+  delay(tiempoRojo);
+  digitalWrite(ledRojo, LOW);
