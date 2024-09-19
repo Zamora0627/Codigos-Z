@@ -1,1 +1,69 @@
+Public Class Form1
+
+    ' Arrays para las imágenes y sus respectivos precios
+    Dim precios() As Decimal = {10D, 25D, 30D, 45D, 60D, 75D, 80D, 95D, 100D, 125D}
+    Dim total As Decimal = 0
+
+    ' Este evento se ejecuta cuando se carga el formulario
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        ' Inicializamos el valor del textbox "Total" en 0
+        txtTotal.Text = "0"
+    End Sub
+
+    ' Evento para cuando se hace clic en la primera imagen
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        ' Sumar el precio de la primera imagen al total
+        total += precios(0)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    ' Evento para la segunda imagen
+    Private Sub PictureBox2_Click(sender As Object, e As EventArgs) Handles PictureBox2.Click
+        total += precios(1)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    ' Evento para la tercera imagen
+    Private Sub PictureBox3_Click(sender As Object, e As EventArgs) Handles PictureBox3.Click
+        total += precios(2)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    ' Continúa agregando los eventos para las demás imágenes (hasta PictureBox10)
+    Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click
+        total += precios(3)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    Private Sub PictureBox5_Click(sender As Object, e As EventArgs) Handles PictureBox5.Click
+        total += precios(4)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles PictureBox6.Click
+        total += precios(5)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+        total += precios(6)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+        total += precios(7)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+        total += precios(8)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+        total += precios(9)
+        txtTotal.Text = total.ToString()
+    End Sub
+
+End Class
 
